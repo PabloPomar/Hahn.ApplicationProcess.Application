@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Hahn.ApplicatonProcess.December2020.Domain.Models
@@ -74,6 +75,14 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Models
             get { return _Hired; }
             set { _Hired = value; }
         }
+
+        public bool validateModel()
+        {
+            return false;
+        }
+
+
+
 
 
     }
