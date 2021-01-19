@@ -32,7 +32,8 @@ namespace Hahn.ApplicationProcess.December2020.Web
             services.AddControllers();
             services.AddHttpClient();
             services.AddDbContext<ApplicantDBContextClass>(options => options.UseInMemoryDatabase(databaseName: "Applicants"));
-
+            services.AddLocalization();
+            //services.AddLocalization(options => options.ResourcesPath = "your-translations-folder");
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { 
@@ -61,6 +62,13 @@ namespace Hahn.ApplicationProcess.December2020.Web
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Hahn.ApplicationProcess.December2020.Web v1"));
             }
+
+            var supportedCultures = new[] { "en-US", "fr" };
+            var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
+                .AddSupportedCultures(supportedCultures)
+                .AddSupportedUICultures(supportedCultures);
+
+            app.UseRequestLocalization(localizationOptions);
 
             app.UseHttpsRedirection();
 

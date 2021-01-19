@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Serilog;
+using System.IO;
 
 namespace Hahn.ApplicationProcess.December2020.Web
 {
@@ -16,10 +18,18 @@ namespace Hahn.ApplicationProcess.December2020.Web
 
 
 
-
         public static void Main(string[] args)
         {
-            var host = CreateHostBuilder(args).Build();
+            var config = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: false).Build();
+         var host = CreateHostBuilder(args).ConfigureLogging(logging => {
+                logging.AddFilter("Microsoft", LogLevel.Information);
+                logging.AddFilter("System", LogLevel.Error);                   
+            }).Build();
+
+
+            Log.Logger = new LoggerConfiguration().WriteTo.File(config["Serilog:path"]).CreateLogger();
+
+            Log.Information("APP STARTED");
 
             using (var scope = host.Services.CreateScope())
             {
