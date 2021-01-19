@@ -1,3 +1,4 @@
+using Hahn.ApplicationProcess.December2020.Data.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,10 +30,22 @@ namespace Hahn.ApplicationProcess.December2020.Web
         {
 
             services.AddControllers();
+            services.AddHttpClient();
+            services.AddDbContext<ApplicantDBContextClass>(options => options.UseInMemoryDatabase(databaseName: "Applicants"));
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Hahn.ApplicationProcess.December2020.Web", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "Hahn.ApplicationProcess.December2020.Web", 
+                    Version = "v1",
+                    Description = "A project to applicate to the company",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Pablo Pomar",
+                        Email = "PabloPomar94@gmail.com",
+                        Url = new Uri("https://github.com/PabloPomar")
+                    }
+                });
             });
 
 

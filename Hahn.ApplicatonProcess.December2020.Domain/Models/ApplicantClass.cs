@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -6,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace Hahn.ApplicatonProcess.December2020.Domain.Models
 {
+
+    /// <summary>
+    /// The model class of the APP, it represents an applicant data. 
+    /// </summary>
+
     public class ApplicantClass
     {
 

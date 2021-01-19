@@ -6,15 +6,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FluentValidation;
+using FluentValidation.Results;
+using System.Net.Http;
 
 namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 {
+    /// <summary>
+    /// This is the main controller of the API. It administrates the calls to the database. 
+    /// </summary>
+
+
+    [ApiController]
+    [Route("Applicant")]
     public class ApplicantController : Controller
     {
 
-        ////[HttpPost]
-        ////[ValidateAntiForgeryToken]
-
+        private static  HttpClient Client;
 
         ////------------Dependencies --------------// 
 
@@ -24,6 +32,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         public ApplicantController(ApplicantDBContextClass context)
         {
             _context = context;
+            Client = new HttpClient();
         }
 
 
@@ -31,8 +40,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         ////----------------GET----------------//
 
         [HttpGet]
-        [ValidateAntiForgeryToken]
-
+        [Route("/GetAll")]
         public JsonResult GetAllApplicants()
         {
             try
@@ -50,17 +58,35 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         //---------------POST-------------//
 
         [HttpPost]
-
-        public IActionResult AddApplicant(ApplicantClass applicant)
+        [Route("/Add")]
+        public async Task<IActionResult> AddApplicantAsync(ApplicantClass applicant)
         {
             try
             {
                 var newID = _context.Applicants.Select(x => x.ID).Max() + 1;
                 applicant.ID = newID;
+                //_context.Applicants.Add(applicant);
+                //_context.SaveChanges();
+                //return StatusCode(201);
 
-                _context.Applicants.Add(applicant);
-                _context.SaveChanges();
-                return StatusCode(201);
+
+                ApplicantClassValidator validator = new ApplicantClassValidator(Client);
+                ValidationResult result = await validator.ValidateAsync(applicant);
+                if (result.IsValid)
+                {
+                    _context.Applicants.Add(applicant);
+                    _context.SaveChanges();
+                    return StatusCode(201);
+                }
+                else
+                {
+                    foreach (var failure in result.Errors)
+                    {
+                        Console.WriteLine("Property" + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
+                    }
+                    return StatusCode(501);
+                }
+
             }
             catch (Exception)
             {
@@ -74,7 +100,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         //---------------Edit---------------//
         
         [HttpGet]
-        [ValidateAntiForgeryToken]
+        [Route("/GetOne")]
         public IActionResult getThisOne(int ID)
         {
             try
@@ -90,7 +116,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         }
 
         [HttpPut]
-        [ValidateAntiForgeryToken]
+        [Route("/Update")]
 
         public IActionResult updateApplicant(ApplicantClass applicant)
         {
@@ -111,7 +137,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         //---------------DELETE--------------// 
 
         [HttpDelete]
-        [ValidateAntiForgeryToken]
+        [Route("/Delete")]
         public IActionResult deleteApplicantByID(int ID)
         {
             try
@@ -127,6 +153,26 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("/TryThis")]
+        public async Task<bool> validateCountry(string CountryOfOrigin)
+        {
+
+            var client = new HttpClient();
+
+            var request = new HttpRequestMessage(HttpMethod.Head, $"https://restcountries.eu/rest/v2/name/" + CountryOfOrigin + "?fullText=true");
+
+            var response = await client.SendAsync(request);
+
+            if (response.IsSuccessStatusCode && response.StatusCode.HasFlag(System.Net.HttpStatusCode.OK))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
     }

@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Hahn.ApplicationProcess.December2020.Data.Models
 {
+
+    /// <summary>
+    /// The database class of the APP.  It makes the Database Persistent. 
+    /// </summary>
     public class ApplicantDBContextClass : DbContext
     {
 

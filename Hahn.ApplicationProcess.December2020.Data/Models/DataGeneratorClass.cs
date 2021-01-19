@@ -10,6 +10,10 @@ namespace Hahn.ApplicationProcess.December2020.Data.Models
 {
     public class DataGeneratorClass
     {
+        /// <summary>
+        /// This class generates data so the database can do stuff on app start. 
+        /// </summary>
+
 
         public static void Initialize(IServiceProvider serviceProvider)
         {
@@ -48,7 +52,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Models
 
                 new ApplicantClass
                 {
-                    ID = 2,
+                    ID = 3,
                     Name = "Harry",
                     FamilyName = "Dubois",
                     Address = "Ravashiol 789",
