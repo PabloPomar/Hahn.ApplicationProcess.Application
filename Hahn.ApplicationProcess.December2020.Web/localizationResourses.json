@@ -68,7 +68,7 @@
     "LocalizedValue": {
       "en-US": "Error trying to update model (Validation error) :",
       "de": "Fehler beim Aktualisieren des Modells (Validierungsfehler):",
-      "es": "Error al intentar actualizar el modelo (error de validación):"
+      "es": "Error al intentar actualizar el modelo (error de validacion):"
     }
   },
   {
@@ -124,7 +124,7 @@
     "LocalizedValue": {
       "en-US": "The adress must have be at least 10 characters long",
       "de": "Die Adresse muss mindestens 10 Zeichen lang sein",
-      "es": "La dirección debe tener al menos 10 caracteres"
+      "es": "La direccion debe tener al menos 10 caracteres"
     }
   },
   {
@@ -132,7 +132,7 @@
     "LocalizedValue": {
       "en-US": "The Email Adress must be valid (it must contain an '@' character)",
       "de": "Die E-Mail-Adresse muss gültig sein (sie muss ein @ -Zeichen enthalten)",
-      "es": "La dirección de correo electrónico debe ser valida (debe contener un caracter '@')"
+      "es": "La direccion de correo electronico debe ser valida (debe contener un caracter '@')"
     }
   },
   {
@@ -156,7 +156,7 @@
     "LocalizedValue": {
       "en-US": "The country must be a valid one (it must exist)",
       "de": "Das Land muss gültig sein (es muss existieren)",
-      "es": "El país debe ser valido (debe existir)"
+      "es": "El pais debe ser valido (debe existir)"
     }
   }
 ]
