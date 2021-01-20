@@ -1,4 +1,5 @@
 using Hahn.ApplicationProcess.December2020.Data.Models;
+using Hahn.ApplicationProcess.December2020.Web.Localization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -7,12 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Hahn.ApplicationProcess.December2020.Web
 {
@@ -32,7 +35,9 @@ namespace Hahn.ApplicationProcess.December2020.Web
             services.AddControllers();
             services.AddHttpClient();
             services.AddDbContext<ApplicantDBContextClass>(options => options.UseInMemoryDatabase(databaseName: "Applicants"));
-            services.AddLocalization();
+            services.AddSingleton<IStringLocalizerFactory, JsonStringLocalizerFactory>();
+            services.AddSingleton<IStringLocalizer, JsonStringLocalizer>();
+            services.AddLocalization(options => options.ResourcesPath = "LocalizationResources");
             //services.AddLocalization(options => options.ResourcesPath = "your-translations-folder");
             services.AddSwaggerGen(c =>
             {
@@ -63,7 +68,7 @@ namespace Hahn.ApplicationProcess.December2020.Web
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Hahn.ApplicationProcess.December2020.Web v1"));
             }
 
-            var supportedCultures = new[] { "en-US", "fr" };
+            var supportedCultures = new[] { "en-US", "de", "es"};
             var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
                 .AddSupportedCultures(supportedCultures)
                 .AddSupportedUICultures(supportedCultures);

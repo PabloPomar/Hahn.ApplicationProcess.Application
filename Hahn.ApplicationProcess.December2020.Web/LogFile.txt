@@ -73,3 +73,46 @@ Property Age failed validation. Error was: 'Age' must be greater than or equal t
 Property CountryOfOrigin failed validation. Error was: The country must ve a valid one (it must exist)
 .
 2021-01-19 17:51:15.612 -03:00 [INF] New Applicant added.
+2021-01-20 14:50:07.407 -03:00 [INF] APP STARTED
+2021-01-20 14:51:17.039 -03:00 [INF] APP STARTED
+2021-01-20 14:52:12.880 -03:00 [INF] APP STARTED
+2021-01-20 14:52:22.287 -03:00 [INF] Hello
+2021-01-20 14:53:19.191 -03:00 [INF] APP STARTED
+2021-01-20 14:53:33.646 -03:00 [INF] Hello ENG
+2021-01-20 14:58:24.446 -03:00 [INF] APP STARTED
+2021-01-20 15:36:59.036 -03:00 [INF] APP STARTED
+2021-01-20 15:37:46.401 -03:00 [INF] APP STARTED
+2021-01-20 15:41:01.701 -03:00 [INF] APP STARTED
+2021-01-20 15:41:17.750 -03:00 [INF] APP STARTED
+2021-01-20 15:41:33.308 -03:00 [INF] APP STARTED
+2021-01-20 15:42:19.322 -03:00 [INF] APP STARTED
+2021-01-20 15:42:30.839 -03:00 [INF] Hola ESP
+2021-01-20 15:43:12.922 -03:00 [INF] APP STARTED
+2021-01-20 15:43:39.733 -03:00 [INF] Hola ESP
+2021-01-20 16:08:14.218 -03:00 [INF] APP STARTED
+2021-01-20 16:08:26.203 -03:00 [INF] Hallo DEU
+2021-01-20 16:09:03.428 -03:00 [INF] APP STARTED
+2021-01-20 16:09:40.324 -03:00 [INF] Hola ESP
+2021-01-20 16:14:46.108 -03:00 [INF] APP STARTED
+2021-01-20 16:16:25.433 -03:00 [INF] APP STARTED
+2021-01-20 16:17:55.490 -03:00 [INF] APP STARTED
+2021-01-20 16:18:10.197 -03:00 [ERR] Error trying to add model (Validation error) : Property Address failed validation. Error was: The adress must have be at least 10 characters long
+Property EMailAdress failed validation. Error was: The Email Adress must be valid (it must contain an '@' character)
+Property Age failed validation. Error was: 'Age' no debería estar vacío.
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+Property CountryOfOrigin failed validation. Error was: The country must ve a valid one (it must exist)
+.
+2021-01-20 16:22:17.569 -03:00 [INF] APP STARTED
+2021-01-20 16:22:56.141 -03:00 [ERR] Error al intentar agregar el modelo (error de validaci�n):Property Address failed validation. Error was: The adress must have be at least 10 characters long
+Property EMailAdress failed validation. Error was: The Email Adress must be valid (it must contain an '@' character)
+Property Age failed validation. Error was: 'Age' no debería estar vacío.
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+Property CountryOfOrigin failed validation. Error was: The country must ve a valid one (it must exist)
+.
+2021-01-20 17:02:54.229 -03:00 [INF] APP STARTED
+2021-01-20 17:03:12.489 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Address failed validation. Error was: La direcci�n debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direcci�n de correo electr�nico debe ser v�lida (debe contener un car�cter '@')
+Property Age failed validation. Error was: 'Age' no debería estar vacío.
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+Property CountryOfOrigin failed validation. Error was: El pa�s debe ser v�lido (debe existir)
+.

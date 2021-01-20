@@ -1,0 +1,162 @@
+[
+  {
+    "Key": "Hello",
+    "LocalizedValue": {
+      "en-US": "Hello",
+      "de": "Hallo",
+      "es": "Hola"
+    }
+  },
+  {
+    "Key": "New Applicant added.",
+    "LocalizedValue": {
+      "en-US": "New Applicant added.",
+      "de": "Neuer Antragsteller hinzugefügt.",
+      "es": "Nuevo solicitante agregado."
+    }
+  },
+  {
+    "Key": "Error trying to get all the applicants:",
+    "LocalizedValue": {
+      "en-US": "Error trying to get all the applicants:",
+      "de": "Fehler beim Versuch, alle Bewerber zu finden:",
+      "es": "Error al intentar obtener todas las solicitantes:"
+    }
+  },
+  {
+    "Key": "Error trying to add model (Validation error):",
+    "LocalizedValue": {
+      "en-US": "Error trying to add model (Validation error):",
+      "de": "Fehler beim Hinzufügen eines Modells (Validierungsfehler):",
+      "es": "Error al intentar agregar el modelo (error de validacion):"
+    }
+  },
+  {
+    "Key": "Error trying to add model:",
+    "LocalizedValue": {
+      "en-US": "Error trying to add model:",
+      "de": "Fehler beim Hinzufügen eines Modells (Validierungsfehler):",
+      "es": "Error al intentar agregar el modelo (error de validacion):"
+    }
+  },
+  {
+    "Key": "Error trying to get this applicant:",
+    "LocalizedValue": {
+      "en-US": "Error trying to get this applicant:",
+      "de": "Fehler beim Versuch, diesen Bewerber zu bekommen:",
+      "es": "Error al intentar obtener este solicitante:"
+    }
+  },
+  {
+    "Key": "Applicant",
+    "LocalizedValue": {
+      "en-US": "Applicant",
+      "de": "Antragsteller",
+      "es": "Solicitante"
+    }
+  },
+  {
+    "Key": "updated.",
+    "LocalizedValue": {
+      "en-US": "updated.",
+      "de": "Aktualisiert.",
+      "es": "actualizado."
+    }
+  },
+  {
+    "Key": "Error trying to update model (Validation error) :",
+    "LocalizedValue": {
+      "en-US": "Error trying to update model (Validation error) :",
+      "de": "Fehler beim Aktualisieren des Modells (Validierungsfehler):",
+      "es": "Error al intentar actualizar el modelo (error de validación):"
+    }
+  },
+  {
+    "Key": "Error trying to update this applicant:",
+    "LocalizedValue": {
+      "en-US": "Error trying to update this applicant:",
+      "de": "Fehler beim Aktualisieren dieses Antragstellers:",
+      "es": "Error al intentar actualizar este solicitante:"
+    }
+  },
+  {
+    "Key": "deleted.",
+    "LocalizedValue": {
+      "en-US": "deleted.",
+      "de": "gelöscht.",
+      "es": "eliminado."
+    }
+  },
+  {
+    "Key": "Error trying to delete this applicant:",
+    "LocalizedValue": {
+      "en-US": "Error trying to delete this applicant:",
+      "de": "Fehler beim Löschen dieses Antragstellers:",
+      "es": "Error al intentar eliminar este solicitante:"
+    }
+  },
+  {
+    "Key": "The ID cant be null",
+    "LocalizedValue": {
+      "en-US": "The ID cant be null",
+      "de": "Die ID kann nicht null sein",
+      "es": "El ID no puede ser nulo"
+    }
+  },
+  {
+    "Key": "The name must have at least 5 characters",
+    "LocalizedValue": {
+      "en-US": "The name must have at least 5 characters",
+      "de": "Der Name muss mindestens 5 Zeichen enthalten",
+      "es": "El nombre debe tener al menos 5 caracteres"
+    }
+  },
+  {
+    "Key": "The family name must contain at least 5 characters",
+    "LocalizedValue": {
+      "en-US": "The family name must contain at least 5 characters",
+      "de": "Der Familienname muss mindestens 5 Zeichen enthalten",
+      "es": "El apellido debe contener al menos 5 caracteres"
+    }
+  },
+  {
+    "Key": "The adress must have be at least 10 characters long",
+    "LocalizedValue": {
+      "en-US": "The adress must have be at least 10 characters long",
+      "de": "Die Adresse muss mindestens 10 Zeichen lang sein",
+      "es": "La dirección debe tener al menos 10 caracteres"
+    }
+  },
+  {
+    "Key": "The Email Adress must be valid (it must contain an '@' character)",
+    "LocalizedValue": {
+      "en-US": "The Email Adress must be valid (it must contain an '@' character)",
+      "de": "Die E-Mail-Adresse muss gültig sein (sie muss ein @ -Zeichen enthalten)",
+      "es": "La dirección de correo electrónico debe ser valida (debe contener un caracter '@')"
+    }
+  },
+  {
+    "Key": "The age field must be between 20 and 60 years old",
+    "LocalizedValue": {
+      "en-US": "The age field must be between 20 and 60 years old",
+      "de": "Das Altersfeld muss zwischen 20 und 60 Jahre alt sein",
+      "es": "El campo de edad debe tener entre 20 y 60 años"
+    }
+  },
+  {
+    "Key": "The Hired field cant be null",
+    "LocalizedValue": {
+      "en-US": "The Hired field cant be null",
+      "de": "Das gemietete Feld kann nicht null sein",
+      "es": "El campo Contratado no puede ser nulo"
+    }
+  },
+  {
+    "Key": "The country must be a valid one (it must exist)",
+    "LocalizedValue": {
+      "en-US": "The country must be a valid one (it must exist)",
+      "de": "Das Land muss gültig sein (es muss existieren)",
+      "es": "El país debe ser valido (debe existir)"
+    }
+  }
+]

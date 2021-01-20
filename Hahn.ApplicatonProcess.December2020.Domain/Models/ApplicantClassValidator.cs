@@ -24,9 +24,9 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Models
             //ApplicantClass helper = new ApplicantClass();
             _client = client;
             WebApiHelperClass helper = new WebApiHelperClass(_client);
-            RuleFor(x => x.ID).NotNull().WithMessage("The ID cant be null");
+            RuleFor(x => x.ID).NotNull().WithMessage(x => localizer["The ID cant be null"]);
             RuleFor(x => x.Name).NotEmpty().MinimumLength(5).WithMessage(x => localizer["The name must have at least 5 characters"]);
-            RuleFor(x => x.FamilyName).NotEmpty().MinimumLength(5).WithMessage(x => localizer["The family name must contain at list 5 characters"]);
+            RuleFor(x => x.FamilyName).NotEmpty().MinimumLength(5).WithMessage(x => localizer["The family name must contain at least 5 characters"]);
             RuleFor(x => x.Address).NotEmpty().MinimumLength(10).WithMessage(x => localizer["The adress must have be at least 10 characters long"]);
             RuleFor(x => x.EMailAdress).NotEmpty().EmailAddress().WithMessage(x => localizer["The Email Adress must be valid (it must contain an '@' character)"]);
             RuleFor(x => x.Age).NotEmpty().GreaterThanOrEqualTo(20).LessThanOrEqualTo(60).WithMessage(x => localizer["The age field must be between 20 and 60 years old"]);
@@ -35,7 +35,7 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Models
             {
                 bool exist = await helper.validateCountry(CountryOfOrigin);
                 return exist;
-            }).WithMessage(x => localizer["The country must ve a valid one (it must exist)"]);
+            }).WithMessage(x => localizer["The country must be a valid one (it must exist)"]);
         }
     }
 }
