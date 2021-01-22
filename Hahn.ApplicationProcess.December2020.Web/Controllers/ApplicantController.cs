@@ -26,7 +26,9 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
     public class ApplicantController : Controller
     {
 
-        private static  HttpClient Client;
+        private static HttpClient Client;
+
+        private readonly IHttpClientFactory _clientFactory;
 
         private readonly IStringLocalizer<ApplicantController> _localizer;
 
@@ -36,17 +38,20 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
         private ApplicantDBContextClass _context;
 
+
         //private readonly ILogger<ApplicantController> _logger;
 
         
 
-        public ApplicantController(ApplicantDBContextClass context, ILogger<ApplicantController> logger, IStringLocalizer<ApplicantController> localizer, IStringLocalizer<ApplicantClass> localizer2)
+        public ApplicantController(ApplicantDBContextClass context, ILogger<ApplicantController> logger, IStringLocalizer<ApplicantController> localizer, IStringLocalizer<ApplicantClass> localizer2, IHttpClientFactory clientFactory)
         {
             _context = context;
             _localizer = localizer;
             _localizer2 = localizer2;
+            _clientFactory = clientFactory;
             //_logger = logger;
-            Client = new HttpClient();
+            //Client = new HttpClient();
+            Client = _clientFactory.CreateClient("appClient");
         }
 
 
@@ -57,11 +62,11 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         [Route("/GetAll")]
         public IActionResult GetAllApplicants()
         {
-
+            //Response.Headers.Add("Access-Control-Allow-Origin", "*");
             try
             {
-                var applicants = Json(_context.Applicants.ToList());            
-                Log.Information(_localizer["Hello"]);
+                //var applicants = Json(_context.Applicants.ToList());           
+                var applicants = Json(_context.Applicants.ToList());
                 return (applicants);
             }
             catch (Exception Ex)
@@ -69,7 +74,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                 string errmessage = string.Format(_localizer["Error trying to get all the applicants:"] + "{0}", Ex);
                 Log.Error(errmessage);
                 //_logger.LogInformation("Error trying to get all the applicants: ", Ex);
-                return Json(StatusCode(400, Ex));
+                return StatusCode(400, Ex);
             }
         }
 
@@ -79,6 +84,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         [Route("/Add")]
         public async Task<IActionResult> AddApplicantAsync(ApplicantClass applicant)
         {
+            //Response.Headers.Add("Access-Control-Allow-Origin", "*");
             var errors = "";
             try
             {
@@ -91,7 +97,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                     _context.Applicants.Add(applicant);
                     _context.SaveChanges();
                     Log.Information(_localizer["New Applicant added."]);
-                    return Json(StatusCode(201));
+                    return StatusCode(201);
                 }
                 else
                 {
@@ -104,7 +110,8 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                     Log.Error(errmessage);
                     //Log.Error("Error trying to add model (Validation error) : {errors}.", errors);
                     //_logger.LogInformation("Error trying to add model (Validation error) :" , errors);
-                    return Json(StatusCode(400, errors));
+                    //return Json(StatusCode(400, errors));
+                    return StatusCode(400, errors);
                 }
 
             }
@@ -124,9 +131,10 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         [Route("/GetOne")]
         public IActionResult getThisOne(int ID)
         {
+            //Response.Headers.Add("Access-Control-Allow-Origin", "*");
             try
             {
-                var applicant = _context.Applicants.Find(ID);
+                var applicant = _context.Applicants.Find(ID);           
                 return Json(applicant);
             }
             catch (Exception Ex)
@@ -134,7 +142,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                 string errmessage = string.Format(_localizer["Error trying to get this applicant:"] + " {0}.", Ex);
                 Log.Error(errmessage);
                 //_logger.LogInformation("Error trying to get this applicant: ", Ex);
-                return Json(StatusCode(400, Ex));
+                return StatusCode(400, Ex);
             }
         }
 
@@ -143,6 +151,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
         public async Task<IActionResult> updateApplicantAsync(ApplicantClass applicant)
         {
+            //Response.Headers.Add("Access-Control-Allow-Origin", "*");
             var errors = "";
             try
             {
@@ -187,6 +196,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         [Route("/Delete")]
         public IActionResult deleteApplicantByID(int ID)
         {
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
             try
             {
                 var applicant = _context.Applicants.Find(ID);

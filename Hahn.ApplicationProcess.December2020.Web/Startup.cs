@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Globalization;
+using Microsoft.Net.Http.Headers;
 
 namespace Hahn.ApplicationProcess.December2020.Web
 {
@@ -28,12 +29,21 @@ namespace Hahn.ApplicationProcess.December2020.Web
 
         public IConfiguration Configuration { get; }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            string t1 = "Access-Control-Allow-Origin";
+            string t2 = "true";
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(options => { options.AllowAnyOrigin(); options.AllowAnyMethod(); options.WithHeaders(HeaderNames.ContentType); }) ;
+            });
             services.AddControllers();
-            services.AddHttpClient();
+            services.AddHttpClient("appClient", c => {
+                c.DefaultRequestHeaders.Add("Access-Control-Allow-Origin", "*");
+            }) ;
             services.AddDbContext<ApplicantDBContextClass>(options => options.UseInMemoryDatabase(databaseName: "Applicants"));
             services.AddSingleton<IStringLocalizerFactory, JsonStringLocalizerFactory>();
             services.AddSingleton<IStringLocalizer, JsonStringLocalizer>();
@@ -78,6 +88,8 @@ namespace Hahn.ApplicationProcess.December2020.Web
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
