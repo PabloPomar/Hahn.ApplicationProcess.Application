@@ -97,7 +97,8 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                     _context.Applicants.Add(applicant);
                     _context.SaveChanges();
                     Log.Information(_localizer["New Applicant added."]);
-                    return StatusCode(201);
+                    String findItAt = _localizer["The new applicant can be seen in:"] + "https://localhost:5001/GetOne?ID=" + newID;
+                    return StatusCode(201, findItAt);
                 }
                 else
                 {

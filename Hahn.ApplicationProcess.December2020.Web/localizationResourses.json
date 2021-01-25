@@ -158,5 +158,13 @@
       "de": "Das Land muss gültig sein (es muss existieren)",
       "es": "El pais debe ser valido (debe existir)"
     }
+  },
+  {
+    "Key": "The new applicant can be seen in:",
+    "LocalizedValue": {
+      "en-US": "The new applicant can be seen in:",
+      "de": "Der neue Antragsteller ist zu sehen in:",
+      "es": "El nuevo solicitante puede verse en:"
+    }
   }
 ]
