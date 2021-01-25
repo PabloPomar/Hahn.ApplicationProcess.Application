@@ -104,6 +104,14 @@
     }
   },
   {
+    "Key": "cant be null",
+    "LocalizedValue": {
+      "en-US": "cant be null",
+      "de": "kann nicht null sein",
+      "es": "no puede ser nulo"
+    }
+  },
+  {
     "Key": "The name must have at least 5 characters",
     "LocalizedValue": {
       "en-US": "The name must have at least 5 characters",
@@ -165,6 +173,78 @@
       "en-US": "The new applicant can be seen in:",
       "de": "Der neue Antragsteller ist zu sehen in:",
       "es": "El nuevo solicitante puede verse en:"
+    }
+  },
+  {
+    "Key": "Property",
+    "LocalizedValue": {
+      "en-US": "The property",
+      "de": "Die Eigenschaft",
+      "es": "La propiedad"
+    }
+  },
+  {
+    "Key": "Name",
+    "LocalizedValue": {
+      "en-US": "Name",
+      "de": "Name",
+      "es": "La propiedad"
+    }
+  },
+  {
+    "Key": "FamilyName",
+    "LocalizedValue": {
+      "en-US": "FamilyName",
+      "de": "Zuname",
+      "es": "Apellido"
+    }
+  },
+  {
+    "Key": "Address",
+    "LocalizedValue": {
+      "en-US": "Address",
+      "de": "Adresse",
+      "es": "Direccion"
+    }
+  },
+  {
+    "Key": "EMailAdress",
+    "LocalizedValue": {
+      "en-US": "EMailAdress",
+      "de": "Email",
+      "es": "Email"
+    }
+  },
+  {
+    "Key": "Age",
+    "LocalizedValue": {
+      "en-US": "Age",
+      "de": "Alter",
+      "es": "Edad"
+    }
+  },
+  {
+    "Key": "Hired",
+    "LocalizedValue": {
+      "en-US": "Hired",
+      "de": "Gemietet",
+      "es": "Contratado"
+    }
+  },
+  {
+    "Key": "CountryOfOrigin",
+    "LocalizedValue": {
+      "en-US": "Country Of Origin",
+      "de": "Herkunftsland",
+      "es": "Pais de origen"
+    }
+  },
+  {
+    "Key": "failed validation. Error was:",
+    "LocalizedValue": {
+      "en-US": "failed validation. Error was:",
+      "de": "Validierung fehlgeschlagen. Fehler war:",
+      "es": "fallo la validacion. El error fue:"
     }
   }
 ]

@@ -104,7 +104,7 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                 {
                     foreach (var failure in result.Errors)
                     {
-                        errors += "Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage + Environment.NewLine;
+                        errors += _localizer["Property"] + " " + _localizer[failure.PropertyName] + " " + _localizer["failed validation. Error was:"] + failure.ErrorMessage + Environment.NewLine;
                         //Console.WriteLine("Property" + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
                     }
                     string errmessage = string.Format(_localizer["Error trying to add model (Validation error):"] + "{0}.", errors);

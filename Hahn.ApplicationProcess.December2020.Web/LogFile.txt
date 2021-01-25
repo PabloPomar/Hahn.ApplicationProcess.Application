@@ -750,3 +750,323 @@ Property CountryOfOrigin failed validation. Error was: El pais debe ser valido (
 2021-01-25 15:29:15.527 -03:00 [INF] APP STARTED
 2021-01-25 15:37:34.454 -03:00 [INF] APP STARTED
 2021-01-25 15:38:16.605 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 15:40:35.912 -03:00 [INF] APP STARTED
+2021-01-25 15:44:03.658 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 15:44:59.813 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:50:04.962 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:50:11.304 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:51:18.446 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:51:26.396 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:52:09.087 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:52:39.051 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:52:58.891 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:53:28.409 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 15:55:10.508 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:55:57.491 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:56:29.742 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:56:40.896 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:57:08.699 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:58:45.309 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:59:14.695 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 15:59:42.871 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 16:00:57.262 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 16:01:44.751 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 16:02:13.683 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 18:55:07.585 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 19:03:50.724 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:05:11.289 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:07:08.033 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:07:59.129 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:08:38.971 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:09:34.408 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:10:45.754 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:12:06.478 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:12:24.700 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:35:03.176 -03:00 [INF] APP STARTED
+2021-01-25 19:36:05.204 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 19:36:58.518 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 19:52:13.040 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:53:12.437 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:54:53.050 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:55:34.659 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:55:51.633 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:56:05.695 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:56:25.005 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:56:51.103 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:57:35.247 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:57:58.846 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:58:17.997 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Name failed validation. Error was: El nombre debe tener al menos 5 caracteres
+Property FamilyName failed validation. Error was: El apellido debe contener al menos 5 caracteres
+Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+.
+2021-01-25 19:59:10.632 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 20:05:15.158 -03:00 [INF] APP STARTED
+2021-01-25 20:05:33.006 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):Property Address failed validation. Error was: La direccion debe tener al menos 10 caracteres
+Property EMailAdress failed validation. Error was: La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+Property Age failed validation. Error was: Ageno puede ser nulo
+Property Age failed validation. Error was: 'Age' debe ser mayor o igual que '20'.
+Property CountryOfOrigin failed validation. Error was: El pais debe ser valido (debe existir)
+.
+2021-01-25 20:24:55.420 -03:00 [INF] APP STARTED
+2021-01-25 20:25:24.249 -03:00 [INF] APP STARTED
+2021-01-25 20:25:41.028 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@')
+La propiedad Edad fallo la validacion. El error fue:Ageno puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:'Age' debe ser mayor o igual que '20'.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:26:32.052 -03:00 [INF] APP STARTED
+2021-01-25 20:26:45.119 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:Ageno puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:'Age' debe ser mayor o igual que '20'.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:27:47.688 -03:00 [INF] APP STARTED
+2021-01-25 20:27:57.464 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:Age no puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:'Age' debe ser mayor o igual que '20'.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:28:39.756 -03:00 [INF] APP STARTED
+2021-01-25 20:29:01.216 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Age fallo la validacion. El error fue:Age no puede ser nulo
+La propiedad Age fallo la validacion. El error fue:'Age' debe ser mayor o igual que '20'.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:30:06.263 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Age fallo la validacion. El error fue:Age no puede ser nulo
+La propiedad Age fallo la validacion. El error fue:'Age' debe ser mayor o igual que '20'.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:31:55.256 -03:00 [INF] APP STARTED
+2021-01-25 20:32:06.085 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:Age no puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:'Age' debe ser mayor o igual que '20'.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:33:52.754 -03:00 [INF] APP STARTED
+2021-01-25 20:34:02.936 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:Age no puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:'Age' debe ser mayor o igual que '20'.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:35:23.832 -03:00 [INF] APP STARTED
+2021-01-25 20:35:32.992 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:Age no puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:El campo de edad debe tener entre 20 y 60 a�os.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:37:20.925 -03:00 [INF] APP STARTED
+2021-01-25 20:37:30.714 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:Edad no puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:El campo de edad debe tener entre 20 y 60 a�os.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 20:42:57.588 -03:00 [INF] APP STARTED
+2021-01-25 20:43:32.105 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad La propiedad fallo la validacion. El error fue:El nombre debe tener al menos 5 caracteres.
+La propiedad Apellido fallo la validacion. El error fue:El apellido debe contener al menos 5 caracteres.
+La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:El campo de edad debe tener entre 20 y 60 a�os.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
