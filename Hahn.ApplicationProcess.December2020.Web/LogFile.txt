@@ -80,3 +80,43 @@ La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser v
 2021-01-26 01:36:37.744 -03:00 [INF] APP STARTED
 2021-01-26 01:45:06.805 -03:00 [INF] APP STARTED
 2021-01-26 01:46:03.303 -03:00 [INF] APP STARTED
+2021-01-26 02:12:39.805 -03:00 [INF] APP STARTED
+2021-01-26 02:14:17.835 -03:00 [INF] APP STARTED
+2021-01-26 02:15:59.842 -03:00 [INF] APP STARTED
+2021-01-26 02:38:52.693 -03:00 [INF] APP STARTED
+2021-01-26 02:40:06.204 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-26 02:40:30.188 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-26 02:40:56.529 -03:00 [INF] Solicitante 3 actualizado.
+2021-01-26 02:41:12.643 -03:00 [WRN] Solicitante 3 eliminado.
+2021-01-26 02:41:28.026 -03:00 [ERR] Error al intentar actualizar este solicitante: Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Attempted to update or delete an entity that does not exist in the store.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Update(IUpdateEntry entry)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Hahn.ApplicationProcess.December2020.Data.Controllers.ApplicantController.updateApplicantAsync(ApplicantClass applicant) in C:\Users\ciber\source\repos\Hahn.ApplicatonProcess.Application\Hahn.ApplicationProcess.December2020.Web\Controllers\ApplicantController.cs:line 170.
+2021-01-26 10:12:55.530 -03:00 [INF] APP STARTED
+2021-01-26 12:53:20.996 -03:00 [INF] APP STARTED
+2021-01-26 13:01:03.804 -03:00 [INF] APP STARTED
+2021-01-26 14:42:45.624 -03:00 [INF] APP STARTED
+2021-01-26 14:44:34.054 -03:00 [INF] APP STARTED
+2021-01-26 14:44:54.809 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-26 15:07:45.166 -03:00 [INF] APP STARTED
+2021-01-26 15:08:19.679 -03:00 [INF] APP STARTED
+2021-01-26 15:09:00.825 -03:00 [INF] APP STARTED
+2021-01-26 15:09:36.206 -03:00 [INF] APP STARTED
+2021-01-26 15:10:20.652 -03:00 [INF] APP STARTED
+2021-01-26 15:10:49.007 -03:00 [INF] APP STARTED
+2021-01-26 15:13:08.326 -03:00 [INF] APP STARTED
+2021-01-26 15:14:03.641 -03:00 [INF] APP STARTED
+2021-01-26 15:14:51.060 -03:00 [INF] APP STARTED
+2021-01-26 15:15:43.655 -03:00 [INF] APP STARTED
+2021-01-26 15:44:12.095 -03:00 [INF] APP STARTED
+2021-01-26 15:44:53.553 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-26 15:45:15.042 -03:00 [INF] Solicitante 3 actualizado.
+2021-01-26 15:45:41.222 -03:00 [WRN] Solicitante 3 eliminado.
+2021-01-26 15:47:25.454 -03:00 [INF] APP STARTED

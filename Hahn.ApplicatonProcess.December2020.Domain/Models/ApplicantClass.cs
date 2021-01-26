@@ -121,7 +121,22 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Models
         //    return false;
         //}
 
+        public ApplicantClass()
+        {
 
+        }
+
+        public ApplicantClass(int id, String Name, String FamilyName, String Address, String Country, String Email, int Age, bool hired)
+        {
+            this.ID = id;
+            this.Name = Name;
+            this.FamilyName = FamilyName;
+            this.Address = Address;
+            this.CountryOfOrigin = Country;
+            this.EMailAdress = Email;
+            this.Age = Age;
+            this.Hired = hired;
+        }
 
 
 

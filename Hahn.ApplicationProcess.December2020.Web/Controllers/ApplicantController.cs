@@ -14,7 +14,7 @@ using Serilog;
 using Microsoft.Extensions.Localization;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace Hahn.ApplicationProcess.December2020.Data.Controllers
+namespace Hahn.ApplicationProcess.December2020.Web.Controllers
 {
     /// <summary>
     /// This is the main controller of the API. It administrates the calls to the database. 
@@ -205,7 +205,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         [Route("/Delete")]
         public IActionResult deleteApplicantByID(int ID)
         {
-            Response.Headers.Add("Access-Control-Allow-Origin", "*");
             try
             {
                 var applicant = _context.Applicants.Find(ID);
@@ -245,6 +244,17 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         //        return false;
         //    }
         //}
+
+
+        /// <summary>
+        /// This is for testing
+        /// </summary>
+        [HttpGet]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        public void AddHttpClientForTesting(HttpClient clie)
+        {
+            Client = clie;
+        }
 
 
     }
