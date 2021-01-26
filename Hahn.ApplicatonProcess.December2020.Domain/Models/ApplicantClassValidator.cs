@@ -20,8 +20,6 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Models
 
         public ApplicantClassValidator(HttpClient client, IStringLocalizer<ApplicantClass> localizer)
         {
-            //
-            //ApplicantClass helper = new ApplicantClass();
             _client = client;
             WebApiHelperClass helper = new WebApiHelperClass(_client);
             RuleFor(x => x.ID).NotNull().WithMessage(x => localizer["The ID cant be null"]);

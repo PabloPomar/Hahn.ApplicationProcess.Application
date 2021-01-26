@@ -14,7 +14,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Models
         /// This class generates data so the database can do stuff on app start. 
         /// </summary>
 
-
         public static void Initialize(IServiceProvider serviceProvider)
         {
             using var context = new ApplicantDBContextClass(serviceProvider.GetRequiredService<DbContextOptions<ApplicantDBContextClass>>());

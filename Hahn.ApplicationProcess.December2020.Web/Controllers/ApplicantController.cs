@@ -38,19 +38,12 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
         private ApplicantDBContextClass _context;
 
-
-        //private readonly ILogger<ApplicantController> _logger;
-
-        
-
         public ApplicantController(ApplicantDBContextClass context, ILogger<ApplicantController> logger, IStringLocalizer<ApplicantController> localizer, IStringLocalizer<ApplicantClass> localizer2, IHttpClientFactory clientFactory)
         {
             _context = context;
             _localizer = localizer;
             _localizer2 = localizer2;
             _clientFactory = clientFactory;
-            //_logger = logger;
-            //Client = new HttpClient();
             Client = _clientFactory.CreateClient("appClient");
         }
 
@@ -62,10 +55,8 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         [Route("/GetAll")]
         public IActionResult GetAllApplicants()
         {
-            //Response.Headers.Add("Access-Control-Allow-Origin", "*");
             try
-            {
-                //var applicants = Json(_context.Applicants.ToList());           
+            {       
                 var applicants = Json(_context.Applicants.ToList());
                 return (applicants);
             }
@@ -73,7 +64,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
             {
                 string errmessage = string.Format(_localizer["Error trying to get all the applicants:"] + "{0}", Ex);
                 Log.Error(errmessage);
-                //_logger.LogInformation("Error trying to get all the applicants: ", Ex);
                 return StatusCode(400, Ex);
             }
         }
@@ -84,7 +74,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         [Route("/Add")]
         public async Task<IActionResult> AddApplicantAsync(ApplicantClass applicant)
         {
-            //Response.Headers.Add("Access-Control-Allow-Origin", "*");
             var errors = "";
             try
             {
@@ -105,13 +94,9 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                     foreach (var failure in result.Errors)
                     {
                         errors += _localizer["Property"] + " " + _localizer[failure.PropertyName] + " " + _localizer["failed validation. Error was:"] + failure.ErrorMessage + Environment.NewLine;
-                        //Console.WriteLine("Property" + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
                     }
                     string errmessage = string.Format(_localizer["Error trying to add model (Validation error):"] + "{0}.", errors);
                     Log.Error(errmessage);
-                    //Log.Error("Error trying to add model (Validation error) : {errors}.", errors);
-                    //_logger.LogInformation("Error trying to add model (Validation error) :" , errors);
-                    //return Json(StatusCode(400, errors));
                     return StatusCode(400, errors);
                 }
 
@@ -119,7 +104,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
             catch (Exception Ex)
             {
                 Log.Error(_localizer["Error trying to add model:"] + " {Ex}.", Ex);
-                //_logger.LogInformation("Error trying to add model:", Ex);
                 return Json(StatusCode(400, Ex));
             }
 
@@ -132,7 +116,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
         [Route("/GetOne")]
         public IActionResult getThisOne(int ID)
         {
-            //Response.Headers.Add("Access-Control-Allow-Origin", "*");
             try
             {
                 var applicant = _context.Applicants.Find(ID);           
@@ -142,7 +125,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
             {
                 string errmessage = string.Format(_localizer["Error trying to get this applicant:"] + " {0}.", Ex);
                 Log.Error(errmessage);
-                //_logger.LogInformation("Error trying to get this applicant: ", Ex);
                 return StatusCode(400, Ex);
             }
         }
@@ -152,7 +134,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
         public async Task<IActionResult> updateApplicantAsync(ApplicantClass applicant)
         {
-            //Response.Headers.Add("Access-Control-Allow-Origin", "*");
             var errors = "";
             try
             {
@@ -171,12 +152,10 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                 {
                     foreach (var failure in result.Errors)
                     {
-                        errors += "Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage  + Environment.NewLine;
-                        //Console.WriteLine("Property" + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
+                        errors += "Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage  + Environment.NewLine;                     
                     }
                     string errmessage = string.Format(_localizer["Error trying to update model (Validation error) :"] + " {0}.", errors);
                     Log.Error(errmessage);
-                    //_logger.LogInformation("Error trying to update model (Validation error) :", errors);
                     return StatusCode(400, errors);
                 }
             }
@@ -184,7 +163,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
             {
                 string errmessage = string.Format(_localizer["Error trying to update this applicant:"] + " {0}.", Ex);
                 Log.Error(errmessage);
-                //_logger.LogInformation("Error trying to update this applicant: ", Ex);
                 return StatusCode(400, Ex);
             }
 
@@ -213,7 +191,6 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
                 string errmessage = string.Format(_localizer["Error trying to delete this applicant:"] + " {0} ", Ex);
                 errmessage = _localizer[errmessage];
                 Log.Error(errmessage);
-                //_logger.LogInformation("Error trying to delete this applicant: ", Ex);
                 return StatusCode(400, Ex);
             }
         }
