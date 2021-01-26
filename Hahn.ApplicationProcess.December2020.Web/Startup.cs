@@ -17,6 +17,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Globalization;
 using Microsoft.Net.Http.Headers;
+using System.IO;
+using System.Reflection;
 
 namespace Hahn.ApplicationProcess.December2020.Web
 {
@@ -29,13 +31,10 @@ namespace Hahn.ApplicationProcess.December2020.Web
 
         public IConfiguration Configuration { get; }
 
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string t1 = "Access-Control-Allow-Origin";
-            string t2 = "true";
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(options => { options.AllowAnyOrigin(); options.AllowAnyMethod(); options.WithHeaders(HeaderNames.ContentType); }) ;
@@ -62,6 +61,22 @@ namespace Hahn.ApplicationProcess.December2020.Web
                         Url = new Uri("https://github.com/PabloPomar")
                     }
                 });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                var baseDir = AppContext.BaseDirectory.Replace('\\', '/');
+                char[] temp = baseDir.ToCharArray();
+                for (int index = 0; index < temp.Length; index++)
+                    switch (temp[index])
+                    {
+                        case '\\':
+                            temp[index] = '/';
+                            break;                          
+                    }
+                string output = new string(temp);
+                output = output + "Hahn.ApplicatonProcess.December2020.Domain.xml";
+                var xmlPath2 = Path.Combine(AppContext.BaseDirectory, "Hahn.ApplicationProcess.December2020.Domain.xml");
+                c.IncludeXmlComments(xmlPath);
+                c.IncludeXmlComments(output);
             });
 
 

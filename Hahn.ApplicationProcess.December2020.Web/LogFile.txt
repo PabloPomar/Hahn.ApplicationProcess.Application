@@ -5,3 +5,78 @@
 2021-01-25 21:02:17.540 -03:00 [INF] Nuevo solicitante agregado.
 2021-01-25 21:33:00.264 -03:00 [INF] APP STARTED
 2021-01-25 21:33:24.028 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 21:52:56.048 -03:00 [INF] APP STARTED
+2021-01-25 21:54:13.239 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 22:21:04.570 -03:00 [INF] APP STARTED
+2021-01-25 22:21:22.624 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:Edad no puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:El campo de edad debe tener entre 20 y 60 a�os.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 22:23:47.244 -03:00 [INF] APP STARTED
+2021-01-25 22:24:59.827 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 22:28:30.823 -03:00 [INF] APP STARTED
+2021-01-25 22:28:49.919 -03:00 [ERR] Error al intentar agregar el modelo (error de validacion):La propiedad Direccion fallo la validacion. El error fue:La direccion debe tener al menos 10 caracteres.
+La propiedad Email fallo la validacion. El error fue:La direccion de correo electronico debe ser valida (debe contener un caracter '@').
+La propiedad Edad fallo la validacion. El error fue:Edad no puede ser nulo
+La propiedad Edad fallo la validacion. El error fue:El campo de edad debe tener entre 20 y 60 a�os.
+La propiedad Pais de origen fallo la validacion. El error fue:El pais debe ser valido (debe existir)
+.
+2021-01-25 22:29:13.816 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-25 22:48:26.375 -03:00 [INF] APP STARTED
+2021-01-25 23:13:03.297 -03:00 [INF] APP STARTED
+2021-01-25 23:16:26.761 -03:00 [INF] APP STARTED
+2021-01-25 23:17:25.440 -03:00 [INF] APP STARTED
+2021-01-25 23:20:54.714 -03:00 [INF] APP STARTED
+2021-01-25 23:23:05.480 -03:00 [INF] APP STARTED
+2021-01-25 23:23:53.467 -03:00 [INF] APP STARTED
+2021-01-25 23:35:54.746 -03:00 [INF] APP STARTED
+2021-01-25 23:37:02.750 -03:00 [INF] APP STARTED
+2021-01-25 23:40:31.716 -03:00 [INF] APP STARTED
+2021-01-25 23:43:40.033 -03:00 [INF] APP STARTED
+2021-01-25 23:44:34.959 -03:00 [INF] APP STARTED
+2021-01-25 23:44:58.090 -03:00 [INF] APP STARTED
+2021-01-25 23:45:45.373 -03:00 [INF] APP STARTED
+2021-01-25 23:46:08.979 -03:00 [INF] APP STARTED
+2021-01-25 23:49:59.868 -03:00 [INF] APP STARTED
+2021-01-25 23:51:41.515 -03:00 [INF] APP STARTED
+2021-01-25 23:58:40.080 -03:00 [INF] APP STARTED
+2021-01-26 00:17:35.489 -03:00 [INF] APP STARTED
+2021-01-26 00:22:11.863 -03:00 [INF] APP STARTED
+2021-01-26 00:25:21.922 -03:00 [INF] APP STARTED
+2021-01-26 00:26:06.834 -03:00 [INF] APP STARTED
+2021-01-26 00:26:55.750 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-26 00:28:15.964 -03:00 [INF] APP STARTED
+2021-01-26 00:30:09.032 -03:00 [INF] APP STARTED
+2021-01-26 00:32:40.465 -03:00 [INF] APP STARTED
+2021-01-26 00:34:44.190 -03:00 [INF] APP STARTED
+2021-01-26 00:35:23.243 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-26 00:36:19.012 -03:00 [INF] APP STARTED
+2021-01-26 00:41:54.964 -03:00 [INF] APP STARTED
+2021-01-26 00:42:49.397 -03:00 [INF] APP STARTED
+2021-01-26 00:46:54.494 -03:00 [INF] APP STARTED
+2021-01-26 00:48:46.328 -03:00 [INF] APP STARTED
+2021-01-26 00:50:03.332 -03:00 [INF] APP STARTED
+2021-01-26 00:51:10.879 -03:00 [INF] APP STARTED
+2021-01-26 00:52:01.209 -03:00 [INF] APP STARTED
+2021-01-26 00:55:16.012 -03:00 [INF] APP STARTED
+2021-01-26 00:55:46.837 -03:00 [INF] APP STARTED
+2021-01-26 00:56:25.311 -03:00 [INF] APP STARTED
+2021-01-26 01:02:28.837 -03:00 [INF] APP STARTED
+2021-01-26 01:03:11.695 -03:00 [INF] APP STARTED
+2021-01-26 01:07:17.597 -03:00 [INF] APP STARTED
+2021-01-26 01:07:46.825 -03:00 [INF] APP STARTED
+2021-01-26 01:08:51.570 -03:00 [INF] APP STARTED
+2021-01-26 01:10:05.227 -03:00 [INF] APP STARTED
+2021-01-26 01:11:32.709 -03:00 [INF] APP STARTED
+2021-01-26 01:14:52.674 -03:00 [INF] APP STARTED
+2021-01-26 01:18:04.036 -03:00 [INF] APP STARTED
+2021-01-26 01:18:47.581 -03:00 [INF] Nuevo solicitante agregado.
+2021-01-26 01:27:55.358 -03:00 [INF] APP STARTED
+2021-01-26 01:29:39.311 -03:00 [INF] APP STARTED
+2021-01-26 01:31:55.534 -03:00 [INF] APP STARTED
+2021-01-26 01:32:13.674 -03:00 [INF] Solicitante 3 actualizado.
+2021-01-26 01:36:37.744 -03:00 [INF] APP STARTED
+2021-01-26 01:45:06.805 -03:00 [INF] APP STARTED
+2021-01-26 01:46:03.303 -03:00 [INF] APP STARTED

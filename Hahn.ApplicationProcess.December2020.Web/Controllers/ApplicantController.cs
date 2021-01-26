@@ -12,15 +12,13 @@ using System.Net.Http;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Microsoft.Extensions.Localization;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 {
     /// <summary>
     /// This is the main controller of the API. It administrates the calls to the database. 
     /// </summary>
-
-
-
     [ApiController]
     [Route("Applicant")]
     public class ApplicantController : Controller
@@ -38,6 +36,9 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
         private ApplicantDBContextClass _context;
 
+        /// <summary>
+        /// This initiates the controller.
+        /// </summary>
         public ApplicantController(ApplicantDBContextClass context, ILogger<ApplicantController> logger, IStringLocalizer<ApplicantController> localizer, IStringLocalizer<ApplicantClass> localizer2, IHttpClientFactory clientFactory)
         {
             _context = context;
@@ -51,12 +52,17 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
         ////----------------GET----------------//
 
+        /// <summary>
+        /// This gets all current applicants in the database.
+        /// </summary>
+        /// <response code="200">Returns all the applicant in the base</response>
+        /// <response code="400">Something went grong with the client</response>     
         [HttpGet]
         [Route("/GetAll")]
         public IActionResult GetAllApplicants()
         {
             try
-            {       
+            {
                 var applicants = Json(_context.Applicants.ToList());
                 return (applicants);
             }
@@ -70,6 +76,16 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
         //---------------POST-------------//
 
+
+        /// <summary>
+        /// Add One Applicant.
+        /// </summary>
+        /// <remarks>
+        /// Note: In this case the id param its unnecessary, it will be ignored in the post request.
+        /// </remarks>
+        /// <response code="201">Returns the newly added applicant id</response>
+        /// <response code="400">If the model doesn't pass validation</response>        
+        /// <param name="applicant"></param>
         [HttpPost]
         [Route("/Add")]
         public async Task<IActionResult> AddApplicantAsync(ApplicantClass applicant)
@@ -111,7 +127,12 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
 
         //---------------Edit---------------//
-        
+
+        /// <summary>
+        /// Get Applicant By Id
+        /// </summary>
+        /// <response code="200">Returns the applicant with the requested ID</response>
+        /// <response code="400">Something went grong with the client or there was no applicant with that ID</response>    
         [HttpGet]
         [Route("/GetOne")]
         public IActionResult getThisOne(int ID)
@@ -129,9 +150,13 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
             }
         }
 
+        /// <summary>
+        /// Updates an applicant.
+        /// </summary>
+        /// <response code="200">The Applicant was succesfully updated</response>
+        /// <response code="400">The new params could not be validated or there was no applicant with that ID</response>    
         [HttpPut]
         [Route("/Update")]
-
         public async Task<IActionResult> updateApplicantAsync(ApplicantClass applicant)
         {
             var errors = "";
@@ -171,6 +196,11 @@ namespace Hahn.ApplicationProcess.December2020.Data.Controllers
 
         //---------------DELETE--------------// 
 
+        /// <summary>
+        /// Deletes an applicant.
+        /// </summary>
+        /// <response code="200">The Applicant was succesfully deleted</response>
+        /// <response code="400">Something went wrong with the client or there was no applicant with that ID</response>    
         [HttpDelete]
         [Route("/Delete")]
         public IActionResult deleteApplicantByID(int ID)
